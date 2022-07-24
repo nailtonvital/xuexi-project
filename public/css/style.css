@@ -7,9 +7,10 @@
 }
 
 body{
-    background-color: #070713;
+    background: #070713;
+    
     color: white;
-    font-family: Outfit;
+    font-family: Outfit ;
     overflow-x:hidden
 }
 
@@ -101,12 +102,12 @@ nav{
     gap: 50px;
 } 
 
-.banner ul li{
+.banner ul li, .people{
     font-style: none;
     display: flex;
     align-items: center;
 }
-.title, .description{
+.title, .description, .people-info{
     margin-left: 15px;
 }
 
@@ -154,6 +155,10 @@ nav{
 .card-content{
     padding: 35px;
 }
+
+.proof-content img{
+    width: 100%;
+}
 .proof {
     margin-bottom: 100px;
 }
@@ -164,7 +169,116 @@ nav{
 }
 
 .proof-content{
+    background-color: #0F0F2C;
+    padding: 30px;
     align-items: center;
     font-size: 25px;
 }
 
+.social-proof h3{
+    font-weight: 300;
+    
+}
+
+.social-proof{
+    margin-bottom: 100px;
+}
+
+.social-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    gap: 40px;
+    margin-top: 15px;
+}
+
+.social-card{
+    background-color: #0F0F2C;
+    padding: 25px;
+    border-style: solid;
+    border-radius: 10px;
+    border: #0F0F2C;
+    width: 100%;
+}
+
+.social-quote{
+    margin: 10px 0 10px 0;
+}
+
+.people-info h2{
+    margin-bottom: -5px;
+}
+
+.people-info p{
+    font-weight: 200;
+}
+
+.accordion-area{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+.accordion {
+    margin-top: 10px;
+    background-color: #0F0F2C;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: #0F0F2C;
+    outline: none;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #171736;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding-top: 10px;
+    padding-inline: 20px;
+    padding-bottom: 15px;
+    background-color: #0F0F2C;
+    display: none;
+    overflow: hidden;
+    border-radius: 0 0 10px 10px;
+}
+
+footer{
+    text-align: center;
+    margin: 15px;
+}
+@media (max-width: 1112px) {
+    .proof-content{
+        flex-direction: column;
+        
+    }
+}
+
+@media (max-width: 802px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        height: 92vh;
+    }
+    .left-hero{
+        width: 100%;
+    }
+    .left-hero button{
+        width: 100%;
+    }
+    .right-hero {
+        width: 100%;
+    }
+}
+
+@media (max-width: 508px) {
+    .features-head h2 {
+        font-size: 35px;
+
+    }
+
+}
