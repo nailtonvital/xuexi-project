@@ -1,4 +1,4 @@
-# Xuexi Project
+# Xuéxí Project
 
 #### Project done in order to improve my skills with screen prototyping and responsiveness 
 
